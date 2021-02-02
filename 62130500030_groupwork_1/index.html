@@ -36,6 +36,13 @@
         .icon{
             font-size: 17px ;
         }
+        body{
+            background-image: url("img/bg_main.png");
+        }
+        .content{
+            width: 860px;
+            font-weight: bold;
+        }
     </style>
 
 </head>
@@ -43,10 +50,9 @@
 
 
 <body>
-
-    <div id="pagetop"></div>
-    <div id="wrapper">
-        <div class="w-full h-28 shadow-lg">
+    <!-- <div id="pagetop"></div> -->
+    <div id="wrapper" >
+        <div class="w-full h-28 shadow-lg bg-white">
             <div class="w-auto h-1/2 mx-auto flex flex-row item-center justify-center border-b-4 border-red-700">
                 <img class="my-auto mr-64" width="153" src="img/Nismo.jpg">
                 <ul class="my-auto ml-64 flex flex-row text-xs text-gray-500">
@@ -86,10 +92,16 @@
         <!--#header-nav-->
         <!-- <script src="/en/common/2016/js/header.js" charset="utf-8"></script> -->
         <!--#header-nav-->
-        <div id="contents">
-            <div id="container">
-
-                <!-- [MAIN] -->
+        <!-- <div id="contents"> -->
+            <div class ="content container h-auto mx-auto bg-white justify-center">
+                <div>
+                    <img width="900" src="img/Cars-1.jpg" alt="Cars-1">
+                    <div class="flex flex-row mx-auto w-3 -mt-5 mb-7">
+                        <input type="radio" name="Cars" class="mr-1 -ml-4" checked>
+                        <input type="radio" name="Cars" class="ml-1">
+                    </div>
+                </div>
+                <!-- [MAIN]
                 <div id="toppage">
 
 
@@ -98,12 +110,12 @@
                             <div class="responsive-slider flexslider">
                                 <ul class="slides">
 
-                                    <!--<li>
+                                    <li>
                                     <div id="slide-9" class="slide">
                                         <a href="/en/event/festa2019/" target="_blank" title="NISMO FESTIVAL at FUJI SPEEDWAY 2019.12.8">
                                             <img width="900" height="260" src="images/19_pfa_nismofes_eng.jpg" class="slide-thumbnail wp-post-image" alt="NISMO FESTIVAL at FUJI SPEEDWAY 2019.12.8" title="NISMO FESTIVAL at FUJI SPEEDWAY 2019.12.8"/></a>
                                     </div>
-                                </li>-->
+                                </li>
 
                                     <li>
                                         <div id="slide-8" class="slide">
@@ -113,7 +125,7 @@
                                                     alt="SUPER GT #23 MOTUL AUTECH GT-R"
                                                     title="SUPER GT #23 MOTUL AUTECH GT-R" />
                                             </a>
-                                            <!--<h2 class="slide-title"><a href="#" title="SUPER GT">SUPER GT - GT500</a></h2>-->
+                                            <h2 class="slide-title"><a href="#" title="SUPER GT">SUPER GT - GT500</a></h2>
                                         </div>
                                     </li>
 
@@ -126,17 +138,17 @@
                                                     alt="2018-spec NISSAN GT-R NISMO GT3"
                                                     title="2018-spec NISSAN GT-R NISMO GT3" />
                                             </a>
-                                            <!--<h2 class="slide-title"><a href="#" title="SUPER GT">SUPER GT - GT300</a></h2>-->
+                                            <h2 class="slide-title"><a href="#" title="SUPER GT">SUPER GT - GT300</a></h2>
                                         </div>
                                     </li>
 
                                 </ul>
 
-                            </div><!-- #featured-content -->
-                        </div><!-- .entry-content -->
-                    </div><!-- .hentry -->
+                            </div>#featured-content
+                        </div>.entry-content
+                    </div>.hentry -->
 
-                    <div class="sp-only">
+                    <!-- <div class="sp-only">
                         <ul class="local-navi">
                             <li><a href="#news_area"><img src="img/sp/btn_local_navi_01.png" alt="MOTORSPORTS"></a></li>
                             <li><a href="#products"><img src="img/sp/btn_local_navi_02.png"
@@ -144,23 +156,22 @@
                             <li><a href="#information"><img src="img/sp/btn_local_navi_03.png"
                                         alt="SHOP INFORMATION"></a></li>
                         </ul>
-                    </div>
+                    </div> -->
 
-
+<!-- 
                     <div class="tcenter">
 
 
                         <div id="news_area">
 
-                            <div class="f_box">
-                                <div class="f_box_hidden clearfix">
-                                    <div class="L">
+                            <div class="f_box"> -->
+                                <div class="w-full h-auto flex flex-row px-2 justify-center text-xs">
+                                    <div class="L w-80 mr-2 pr-4 border-r-2 border-gray-400">
                                         <div style="line-height:0;">
-                                            <img src="img/bnr_motorsports.gif" alt="MOTORSPORTS" width="405"
-                                                height="67" />
+                                            <img src="img/bnr_motorsports.gif" alt="MOTORSPORTS" class="w-80"/>
                                         </div>
                                         <h2 style="margin-bottom:0px;line-height:0;">
-                                            <img src="img/h2_2013top01.gif" alt="RACING NEWS" width="405" height="34" />
+                                            <img src="img/h2_2013top01.gif" alt="RACING NEWS" class="w-80" />
                                         </h2>
                                         <div class="news_grayborder">
 
@@ -488,7 +499,7 @@
                                             <div id="thumb_gallery">
                                                 <dl>
                                                     <dt style="width:100px;height:65px;text-align:center">
-                                                        <img src="img/cars/sgt500.jpg" width="100" height="60"
+                                                        <img src="img/sgt500.jpg" width="100" height="60"
                                                             border="0" class="jquery-hover" style="border:none;"
                                                             alt="NISSAN GT-R NISMO GT500" />
                                                     </dt>
@@ -497,7 +508,7 @@
                                                 <dl>
                                                     <dt style="width:100px;height:65px;text-align:center">
                                                         <a href="/en/products/customerracing/#car" title="GT-R GT3">
-                                                            <img src="img/cars/gt3.jpg" width="100" height="60"
+                                                            <img src="img/gt3.jpg" width="100" height="60"
                                                                 border="0" class="jquery-hover" style="border:none;"
                                                                 alt="NISSAN GT-R NISMO GT3" />
                                                         </a>
@@ -507,7 +518,7 @@
                                                 <dl>
                                                     <dt style="width:100px;height:65px;text-align:center">
                                                         <a href="/en/products/customerracing/#engine" title="">
-                                                            <img src="img/cars/racingengine.jpg" width="100" height="60"
+                                                            <img src="img/racingengine.jpg" width="100" height="60"
                                                                 border="0" class="jquery-hover" style="border:none;"
                                                                 alt="Racing Engine" />
                                                         </a>
@@ -516,7 +527,7 @@
                                                 </dl>
                                                 <dl>
                                                     <dt style="width:100px;height:65px;text-align:center">
-                                                        <img src="img/cars/leafrc.jpg" width="100" height="60"
+                                                        <img src="img/leafrc.jpg" width="100" height="60"
                                                             border="0" class="jquery-hover" style="border:none;"
                                                             alt="NISSAN LEAF NISMO RC" />
                                                     </dt>
@@ -529,15 +540,13 @@
 
 
                                     <!-----/////----->
-                                    <div id="products" class="R">
+                                    <div id="products" class="R w-80 ml-2">
                                         <!-----/////----->
                                         <div style="line-height:0;">
-                                            <img src="img/bnr_products.gif" alt="PRODUCTS & CORPORATE" width="405"
-                                                height="67" />
+                                            <img src="img/bnr_products.gif" alt="PRODUCTS & CORPORATE" class="w-80" />
                                         </div>
                                         <h2 style="margin-bottom:0px;line-height:0;">
-                                            <img src="img/h2_2013top02.gif" alt="PRODUCT & CORPORATE NEWS" width="405"
-                                                height="34" />
+                                            <img src="img/h2_2013top02.gif" alt="PRODUCT & CORPORATE NEWS" class="w-80"/>
                                         </h2>
                                         <div class="news_grayborder">
                                             <dl class="news">
@@ -605,6 +614,7 @@
                                 </div>
                             </div>
                         </div>
+             </div>
 </body>
 
 </html>
