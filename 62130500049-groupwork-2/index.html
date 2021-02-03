@@ -18,8 +18,11 @@
 <!-- Credit: https://www.youtube.com/watch?v=v74SZBVMPa0 -->
 
 <body>
-    <div id="app">
-        <h1>{{message}} {{name}}</h1>
+    <div id="app" class="p-8">
+        {{msg}}
+        <p v-if="shown">You can see this message.</p>
+        <p v-show="shown">You can see this message.(v-show)</p>
+        <a v-bind:href="url">Please Click Here</a>
     </div>
 
     <!-- Import Js -->
